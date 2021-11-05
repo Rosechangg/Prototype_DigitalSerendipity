@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Digital Serendipity</title>
+</head>
+
+   <body>
+
+      <p>
+      <h1> Digital Serendipity </h1>
+      </P>
+   
+      <form action = "http://localhost:3003/phase2" method = "POST">
+      <div class="row">
+            {% for i in result %}
+                <div class = "col-lg-4 col-md-6 col-sm-6 col-xs-6 custom-control custom-checkbox" style="padding-left: 10%; padding-right: 10%">
+                    <!--<input type="checkbox" name="test" value="{{i}}"> <label>{{i}}</label>-->
+                    <input type="checkbox" name="choice_words" value="{{i}}"> <label>{{i}}</label>
+                </div>
+            {% endfor %}
+        </div>
+            <div style="text-align: center">
+                <input class="btn btn-primary" type="submit" action="submit" value="SUBMIT" >
+            </div>
+      
+
+   </body>
+</html>

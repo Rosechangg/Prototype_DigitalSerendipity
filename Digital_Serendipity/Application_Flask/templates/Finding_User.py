@@ -11,13 +11,13 @@ import folium
 from math import sin, cos, sqrt, atan2, radians
 import numpy as np
 
-#Google API
-gmaps_key = "AIzaSyDncpA_TIRwR0dqIaERSFlcIaVYuNIEx1U"
+#Your Google API
+gmaps_key = ""
 gmaps = googlemaps.Client(key=gmaps_key)
 
-#Naver API
-keyID = "nrmyamgrqp"
-keyPW = "IhbMAZssfW9TAXzmOUJaA8QRb32aAxih2onYVrPL"
+#Your Naver API
+keyID = ""
+keyPW = ""
 
 def New_User_Invitation():
             
